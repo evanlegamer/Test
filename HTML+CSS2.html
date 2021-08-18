@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="CSS2.css">
+        <title>Apprendre le HTML et CSS</title>
+    </head>
+
+    <body>
+        <!--En tête de ma page -->
+        <header>
+            <div id="conteneur">
+                <div class="element1">Element </div>
+                <div class="element2">Element </div>
+                <div class="element3">Element </div>
+            </div>
+        </header>
+
+        <!-- Barre de navigation à gauche -->
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">CV</a></li>
+            </ul>
+        </nav>
+
+        <!-- Faire un formulaire -->
+        <div class="formulaire">
+            <!-- Traitement des infos envoyé par l'utilisateur -->
+            <form method="post" action="php">
+                <!-- Créer la zone de texte monoligne -->
+                <p>
+                         <!-- Ecriture avant la barre -->                                       <!--Paramètres de la barre -->
+                    <label for="pseudo">Votre Pseudo </label>: <input type="text" name="pseudo" id="pseudo" placeholder="Ex: Xofo" maxlength="15" size="17">
+                    <br /><br />
+                    <label for="mdp">Votre Mot de passe </label>: <input type="password" name="mdp" id="mdp" placeholder="Ex: OL1999tbs1999" size="17">
+                    <br /><br />
+                    <span class="send"> Valider</span>
+            </form>
+
+            <!-- Creation zone de texte multiligne-->
+            <form method="post" action="php">
+                <p class="com">
+                    <label for="Commentaire">Faites un Commentaire !</label><br /><br />
+                    <textarea name="Commentaire" id="Commentaire"></textarea>
+                </p>
+            </form>
+            
+            <!-- Creation de liste à choix multiples -->
+            <form method="post" action="php">
+                <p>
+                    Quel est votre plat préféré ?<br /><br />
+                    <input type="checkbox" name="couscous" id="couscous" /> <label for="couscous">Couscous</label><br />
+                    <input type="checkbox" name="tajine" id="tajine" /> <label for="tajine">Tajine</label><br /><br />
+                    <span class="send"> Confirmer</span>
+                </p>
+            </form>
+            
+            <!-- Creation de liste à choix unique -->
+            <form method="post" action="traitement.php">
+                <p>
+                    Quel est votre tranche d'age ?<br /><br />
+                    <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />
+                    <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />
+                    <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
+                    <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>
+                </p>
+             </form>
+        </div>
+
+        <!-- Type="text" pour du texte -->  <!-- Type="password" pour un mot de passe -->  <!-- Type="email" pour un mail -->  <!-- Type="tel" pour un numero de téléphone -->  <!-- Type="search" pour une barre de recherche -->  <!-- Et pleins d'autres ! -->
+
+        <!-- Section de page --> 
+        <section>
+            <p class="p1">
+            Salut, Voici mon nouveau site. bla bla bla bla la bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla bla bla bla bla la bla bla bla la bla bla bla bla la bla bla bla bla bla bla 
+            bla bla bla bla la bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            </p>  
+            <p>
+                La suite <a href="HTML+CSS3.html" target="_blank">ICI</a>
+            </p>  
+
+        </section>
+
+        <!-- Infos complémentaire (généralement sur le coté) -->
+        <aside>
+            <!-- Annonce du début du tableau -->
+            <table>
+                <!-- Faire un tableau -->
+                <tr>
+                    <td>Nizaar</td>
+                    <td>17 ans</td>
+                    <td>France</td>
+                </tr>
+            </table>
+        </aside>
+
+        <!-- Pied de page -->
+        <footer>
+
+        </footer>
+
+    </body>
+</html>

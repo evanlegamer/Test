@@ -1,0 +1,344 @@
+/* Mettre une couleur à un élément */
+h1
+{
+    color: brown
+}
+
+/* Mettre la même couleur à plusieurs éléments en même temps */
+h2, h3, h4, strong
+{
+    color: red;
+}
+/* PROBLEME: "strong" indique que TOUT le texte en gras du site soit d'une couleur */
+
+/* Il faut donc utiliser une variable indiqué sur le fichier html (Ne pas oublier le . avant le nom de la variable !) */
+.ita1
+{
+    color: green
+}
+/* PROBLEME: "class" ne marche que sur une phrase entière */
+
+/* Si on veut le faire pour seulement un mot, on fait pareil que "class", sauf qu'on rajoute <span> avant. */
+.cs
+{
+    color: purple
+}
+
+/* Assez avec les couleurs, on va voir pour les tailles */
+
+/* Taille du texte en pixel */
+h1
+{
+    font-size: 40px
+}
+/* Taille relative du texte (voir liste sur le site)*/
+p
+{
+    font-size: large
+}
+.t1
+{
+    font-size: xx-small
+}
+.t2
+{
+    font-size: x-small
+}
+.t3
+{
+    font-size: small
+}
+.t4
+{
+    font-size: medium
+}
+.t5
+{
+    font-size: large
+}
+.t6
+{
+    font-size: x-large
+}
+.t7
+{
+    font-size: xx-large
+}
+/* Taille du txte en pourcentage (1=100%) */
+h3
+{
+    font-size: 1.4em
+}
+
+
+/* Maintenant, la police du texte ! (liste sur le site aussi ^^) */
+.p1
+{
+    font-family: Arial, sans-serif      /* On utilise "sans-serif" pour dire que si l'utilisateur n'a pas cette cette police, on met la police de base */
+}
+.p2
+{
+    font-family: Arial Black, sans-serif
+}
+.p3
+{
+    font-family: 'Comic sans MS', sans-serif       
+}
+.p4
+{
+    font-family: 'Courier New', sans-serif
+}
+.p5
+{
+    font-family: Georgia, sans-serif
+}
+.p6
+{
+    font-family: Impact, sans-serif
+}
+.p7
+{
+    font-family: 'Times New Roman', Times, sans-serif
+}
+.p8
+{
+    font-family: 'Trebuchet MS', sans-serif
+}
+.p9
+{
+    font-family: Verdana, sans-serif          
+}
+
+
+/* La je vais juste faire quelques ajustements pour rendre le site plus joli ^^ (tu peux reprendre apres le prochain commentaire) */
+.titre1
+{
+    font-size: x-large
+}
+.titre2
+{
+    font-size: x-large
+}
+.titre3
+{
+    font-size: x-large
+}
+h4
+{
+    font-size: x-large
+}
+li
+{
+    font-size: large
+}
+.flt
+{
+    color: green
+}
+.flt
+{
+    font-weight: bold
+}
+.ttflt
+{
+    font-weight: bold
+}
+.ttflt
+{
+    color: red
+}
+.ttflt
+{
+    font-size: x-large
+}
+.bord0
+{
+    color: red;
+    font-size: x-large;
+    font-weight: bold;
+    
+}
+.omb0
+{
+    color: red;
+    font-size: x-large;
+    font-weight: bold;
+}
+a
+{
+    text-decoration: underline;
+    color:blue
+}
+
+/* C'est bon, tu peux passer a la suite ^^ */
+
+
+/* Maintenant, on va voir pour les styles de texte */
+.Ita2
+{
+    font-style: italic
+}
+.Obl1
+{
+    font-style: oblique
+}
+/* Pour le texte en gras c'est "weight" */
+.Gras1
+{
+    font-weight: bold
+}
+
+
+/* Les décorations */
+.soul1
+{
+    text-decoration: underline
+}
+.bar1
+{
+    text-decoration: line-through
+}
+.trait1
+{
+    text-decoration: overline
+}
+
+
+/* On arrive aaaa.... l'alignement ! */
+h1, .Intro
+{
+    text-align: center
+}
+
+
+/* Faire flotter un élément */
+.imgC
+{
+    float: left
+}
+/* Pour que le texte reprenne en dessous, tu fais ca (ou tu peux juste faire plusieurs <br />, mais c'est pas tres beau) */
+.dessous
+{
+    clear: both
+}
+
+
+/* Couleur de fond */
+body
+{
+    background-color: rgb(255, 255, 110);
+    /* Couleur du texte de la page */
+    color: black;
+}
+/* Image de fond */
+body
+{
+    background-image: url("img/Jaune.jpg");
+    /* Fond du site Fixé (l'image restera immobile lors du scroll) */
+    background-attachment: fixed;
+    /* Faire en sorte que l'image ne se répète pas en mosaique (je vais l'enlevé parce que c'est moche) */
+    background-repeat: no-repeat;
+    background-repeat: repeat               /* Par défault, repeat est activé */
+}
+/* On peut aussi abréger comme ca */
+body
+{
+    background: url("img/CSSimg.svg") top right no-repeat, url("img/Jaune.jpg") ;        /* Ne pas inverser l'ordre, sinon tu ne verra plus l'image CSS */
+    background-size: 12%
+}
+
+
+/* Bordures */
+.bord1
+{
+    border: 3px orangered solid
+}
+.bord2
+{
+    border: 3px orangered dotted
+}
+.bord3
+{
+    border: 3px orangered dashed
+}
+.bord4
+{
+    border: 5px orangered double
+}
+.bord5
+{
+    border: 3px orangered groove
+}
+.bord6
+{
+    border: 3px orangered ridge
+}
+.bord7
+{
+    border: 3px orangered inset
+}
+.bord8
+{
+    border: 3px orangered outset
+}
+/* Bordure arrondie */
+.borda
+{
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: orangered;
+}
+
+
+/* Ombres */ 
+.omb1
+{
+    text-shadow: 3px 3px 4px black
+}   
+.omb2
+{
+    text-shadow: 6px 0px 3px black
+}
+.omb3
+{
+    text-shadow: 0px 6px 3px black
+}
+.omb4
+{
+    text-shadow: 4px 4px 4px black
+}
+.omb5
+{
+    text-shadow: 4px 4px 5px green
+}
+/* Bordure + Ombre */
+.bord-omb
+{
+    border: 4px solid orangered;
+    box-shadow: 6px 6px 5px orangered;       /* Tu peux aussi rajouter "inset" pour que l'ombre soit à l'interieur de la bordure */
+    width: 400px
+}    
+
+/* Apparences de liens */
+
+/* Lorsqu'on survol le lien */
+a:hover
+{
+    text-decoration: none;
+    color: rgb(250, 250, 250)
+}
+/* Losqu'on clique sur le lien */
+a:active
+{
+    text-decoration: none;
+    color: red
+}
+/* Lorsqu'on séléctionne le lien */
+a:focus
+{
+    text-decoration: none;
+    background-color: yellowgreen;
+}
+/* Lorsque le lien a déja été consulté (Je le ferai pas car ca retire tout ce que j'ai fait avant) */
+a:visited

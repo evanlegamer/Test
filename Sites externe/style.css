@@ -1,0 +1,41 @@
+em
+{
+    color: purple;
+    text-decoration: underline;
+}
+
+h1
+{
+    font-size: xx-large;
+}
+
+p
+{
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+*
+{
+    font-family: arial;
+    text-align: center;
+    font-weight: bold;
+}
+
+ul
+{
+    font-size: 1.15em;
+    font-weight: bold;
+    border: purple ridge;
+    width: 200px;
+    margin: auto;
+}
+
+body
+{
+    background-image: url("images/fond_lean.png") ;
+    background-size: cover;
+    height: 100vh;
+    border: purple ridge;
+    width: auto;
+}

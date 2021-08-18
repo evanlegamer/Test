@@ -1,0 +1,138 @@
+.p1
+{
+    background-color: yellowgreen;
+    width: 360px; 
+    /* Marge exterieur de la bordure */
+    margin: auto;       /* On peut  demander à ce que le bloc soit centré avec auto */
+    /* Marge intérieur de la bordure */
+    padding: 12px;
+    text-align: center;
+    border: 3px solid red;
+    height: 50px;
+    /* Mettre une barre de scroll si ca dépasse verticalement */    
+    overflow: auto;
+    /* Passer a la ligne si le texte dépasse horizontalement */
+    word-wrap: break-word;
+}
+
+/* Ancienne méthode pour éditer un élément d'un ensemble */
+.element1
+{
+    border: red solid;
+    padding: 20px;
+    background-color: red;
+    width: 70px;
+    text-align: center
+}
+.element3
+{
+    border: blue solid;
+    padding: 20px;
+    background-color: blue;
+    width: 70px;
+    text-align: center
+}
+/* Maintenant, il va falloir faire comme l'élement 2 en bas quand tu utilisera un ensemble de plusieurs éléments */
+
+/* Faire bouger des éléments avec flex */
+#conteneur
+{
+    border: 4px black solid;
+    height: 200px;
+    /* Ajout de la fonction flex */
+    display: flex;
+    /* Mettre des éléments en colonne */
+    flex-direction: column;
+    /* Mettre des éléments en ligne */
+    flex-direction: row;
+    /* Mettre des éléments vers la fin (a droite) */
+    justify-content: flex-end;
+    /* Centrer des éléments */
+    justify-content: center;
+    /* Ecarter des éléments vers les éxtrémités */
+    justify-content: space-between;
+    /* Changer l'alignement des éléments sur l'axe secondaire (vertical dans mon cas) */
+    align-items: center;
+}
+/* Selectionner 1 seul élément du conteneur (Nouvelle méthode pour éditer un élément) */
+.element2:nth-child(2)
+{
+    border: green solid;
+    padding: 20px;
+    background-color: green;
+    width: 70px;
+    text-align: center;
+    /* Faire une exeption pour 1 élément */
+    align-self: flex-start;
+    /* Changer l'ordre des éléments (la ca marche pas donc je fais rien) */
+    order: ;
+    /* Occuper tout l'espace restant */
+    flex: 1;
+}
+
+/* Mise en page sans flex */
+nav
+{
+    /* Je transforme la navigation en block pour que les blocks soit cote a cote */
+    display: inline-block;
+    border: solid 4px blue;
+    width: 200px;
+    height: 149px;
+    /* Je fais flotter la navigation pour que le texte se poursuit à droite */
+    float: left;           
+}
+.p1
+{ 
+    display: inline-block;
+
+}
+body
+{
+    /* Je retire les marges entre les bordures et l'extremité */
+    margin: 0px
+}
+
+/* Tableaux */
+td
+{
+    border: 1px solid black;
+    padding: 2px
+}
+table
+{
+    /* Coller les bordures du tableau */
+    border-collapse: collapse;
+}
+.formulaire
+{   
+    display: flex;
+    border: 4px rgb(192, 181, 22) solid;
+    justify-content: space-between;
+    align-items: center;
+}
+form
+{
+    margin: auto;
+    font-weight: bold;
+}
+.send
+{   
+    background-color: red;
+    color: black;
+    margin-left: 2px;
+    padding-right: 4px;
+    border: red 1px solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px red
+}
+.send:hover
+{
+    color: white
+}
+textarea
+{
+    width: 400px;
+    max-width: 400px
+}
+
+
