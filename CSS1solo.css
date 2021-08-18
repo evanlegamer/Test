@@ -2,7 +2,7 @@ html
 {   
     /* Scroll fluide lorsqu'on clique sur les liens */
     scroll-behavior: smooth;
-}
+}/*
 body
 {
     margin: 0px;
@@ -49,7 +49,6 @@ h1
 }
 .flechouille
 {
-    /* Limiter la hitbox a la bordure */
     border-radius: 100%
 }
 .fleche:hover
@@ -140,7 +139,7 @@ section
     margin-top: 0px;                                           
     background-color: rgb(241, 216, 131, 0.8);
     align-items: center
-}
+}*/
 .titres
 {
     font-size: xx-large;
